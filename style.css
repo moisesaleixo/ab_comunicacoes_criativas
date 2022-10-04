@@ -1,0 +1,305 @@
+/* Zerando a página */
+*{
+    margin-top: 10px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(37, 7, 71);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Seção inicial */
+#cont_inicial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cont_inicial h1{
+    font-size: 2rem;
+    color: white;
+}
+
+#cont_inicial h3{
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+#cont_inicial img{
+    border-radius: 30px;
+    width: 250px;
+}
+
+#cont_inicial button{
+    margin-top: 30px;
+    border: none;
+}
+
+#cont_inicial button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    animation: mudacor 5s infinite;
+}
+
+@-webkit-keyframes mudacor{
+    0%{
+        background: linear-gradient(to right, rgb(52, 20, 137), rgb(163, 72, 21));
+        transition: transform .5s ease-in-out;
+    }
+    25%{
+        background: linear-gradient(to right, rgb(160, 41, 88), rgb(123, 204, 181));
+        transition: transform .5s ease-in-out;
+    }
+    50%{
+        background: linear-gradient(to right, rgb(224, 18, 110), rgb(225, 162, 78));
+        transition: transform .5s ease-in-out;
+    }
+    75%{
+        background: linear-gradient(to right, rgb(160, 124, 254), rgb(219, 246, 12));
+        transition: transform .5s ease-in-out;
+    }
+    100%{
+        background: linear-gradient(to right, rgb(84, 101, 175), rgb(67, 211, 251));
+        transition: transform .5s ease-in-out;
+    }
+}
+
+
+/* Apresentação */
+#apresentacao{
+    margin-top: 20vh;
+    color: white;
+    text-align: center;
+}
+
+#apresentacao h1{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 550px;
+    margin: 0 auto;
+}
+
+span{
+    color: rgb(152, 28, 152);
+    font-size: 2rem;
+}
+
+#apresentacao p{
+    font-weight: 500;
+    width: 500px;
+    margin: 30px auto;
+}
+
+/* Serviços */
+/* Blog e Legendas */
+#servicos{
+    width: 630px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog h3, p{
+    display: block;
+    text-align: left;
+    width: 300px;
+}
+
+#legendas{
+    display: inline-flex;
+    text-align: center;
+    width: 300px;
+}
+
+#blog, #legendas{
+    display: inline-block;
+}
+
+#servicos h1{
+    font-size: 1.5rem;
+    color: rgb(152, 28, 152);
+    margin-left: 15px;
+    margin-top: 20vh;
+}
+
+#servicos h3{
+    font-size: 1.2rem;
+    margin-left: 15px;
+    color: rgb(152, 28, 152);
+}
+
+#servicos p{
+    font-size: 1rem;
+    color: white;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/* Imagens */
+#outros_servicos{
+    position: relative;
+    width: 800px;
+    margin: 20vh auto;
+}
+
+#outros_servicos h3{
+    color: rgb(152, 28, 152);
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+#outros_servicos p{
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+}
+
+#outros_servicos img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* Outros Serviços */
+#oq_precisa h3{
+    color: rgb(152, 28, 152);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#oq_precisa p{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin: 25px auto;
+}
+
+/* Final */
+#final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#final div{
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.titulo{
+    color: rgb(152, 28, 152);
+    font-size: 1.5rem;
+}
+
+#final h1{
+    color: rgb(152, 28, 152);
+    font-size: 2rem;
+}
+
+.num{
+    color: white;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+#final p{
+    display: inline;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.redes a i{
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    animation: aleatorio 5s infinite;
+    margin-top: 5vh;
+}
+
+@-webkit-keyframes aleatorio{
+    0%{
+        background-color: red;
+        color: black;
+    }
+    25%{
+        background-color: yellow;
+        color: black;
+    }
+    50%{
+        background-color: blue;
+        color: white;
+    }
+    75%{
+        background-color: purple;
+        color: white;
+    }
+    100%{
+        background-color: green;
+        color: black;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px){
+    #outros_servicos img{
+        display: block;
+        position: relative; 
+        margin: 0 auto;
+    }
+
+    #outros_servicos h3{
+        text-align: center;
+    }
+
+    #outros_servicos p{
+        margin: 0 auto;
+    }
+
+    #servicos #blog{
+        display: block;
+    }
+
+    #servicos #legendas{
+        display: block;
+    }
+
+    #servicos{
+        text-align: center;
+    }
+    #blog h3, #legendas{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #blog p{
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    #apresentacao{
+        text-align: center;
+    }
+
+    #final{
+        display: block;
+    }
+
+}
